@@ -31,9 +31,13 @@
 
 .imgHome {
     width: 60%;
-    margin: 50px 0;
+    margin: 7rem 0 0;
     border-radius: 20px;
     /* height: 100px; */
+}
+
+.imgQuantica{
+    margin: 4rem 0 !important;
 }
 
 .subtitulo {
@@ -65,7 +69,7 @@
 
 #vantagens-desvantagens {
     display: flex;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 #vantagens-desvantagens .espaco-vd {
