@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="menu.css">
-    </link>
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     </link>
     <link rel="stylesheet" type="text/css" href="global.css">
     </link>
@@ -18,6 +16,30 @@
         href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dosis:wght@200;400;600&family=Kdam+Thmor+Pro&family=Oswald:wght@200;400;600&display=swap"
         rel="stylesheet">
     <title>Computação Quântica</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Seleciona o botão de navegação
+            var btnNav = document.getElementById('btn-nav');
+
+            // Seleciona os links do menu
+            var links = document.querySelectorAll('.navigation a');
+
+            // Adiciona um evento de clique a cada link do menu
+            links.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Verifica se o botão de navegação está marcado (menu visível)
+                    if (btnNav.checked) {
+                        // Desmarca o botão de navegação (oculta o menu)
+                        btnNav.checked = false;
+                    } else {
+                        // Marca o botão de navegação (exibe o menu)
+                        btnNav.checked = true;
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -47,7 +69,7 @@
 
     </header>
 
-    <section  id="home">
+    <section id="home">
         <div class="img-destaque">
             <img src="modelo1.jpg" alt="" class="imgHome">
         </div>
@@ -76,20 +98,24 @@
         <h4 class="subtitulo">Vantagens x desvantagens</h4>
 
         <div id="vantagens-desvantagens">
-            <div class="espaco-vd">
-                <p>Capacidade de realizar cálculos paralelos, o que pode aumentar significativamente a velocidade de
-                    processamento;</p>
+            <div class="texto-vd">
+                <div class="espaco-vd">
+                    <p>Capacidade de realizar cálculos paralelos, o que pode aumentar significativamente a velocidade de
+                        processamento;</p>
+                </div>
+                <div class="espaco-vd">
+                    <p>Agilidade na resolução de problemas;
+                    </p>
+                </div>
             </div>
-            <div class="espaco-vd">
-                <p>Agilidade na resolução de problemas;
-                </p>
-            </div>
-            <div class="espaco-vd">
-                <p>Armazenamento de dados em quantidades muito maiores, devido à capacidade de processamento e à
-                    superposição quântica;</p>
-            </div>
-            <div class="espaco-vd">
-                <p>Menor consumo de energia em comparação com supercomputadores convencionais.</p>
+            <div class="texto-vd">
+                <div class="espaco-vd">
+                    <p>Armazenamento de dados em quantidades muito maiores, devido à capacidade de processamento e à
+                        superposição quântica;</p>
+                </div>
+                <div class="espaco-vd">
+                    <p>Menor consumo de energia em comparação com supercomputadores convencionais.</p>
+                </div>
             </div>
         </div>
 
@@ -106,7 +132,7 @@
         <hr class="linha">
     </div>
 
-    <section id="comoIngressar"  class="text-descricao">
+    <section id="comoIngressar" class="text-descricao">
         <h1 class="titulo">Como Ingressar</h1>
         <p class="descricao">
             Para ingressar na área de computação quântica, é importante considerar a educação e as habilidades
@@ -122,11 +148,12 @@
     <div class="espacamento-linha">
         <hr class="linha">
     </div>
-   
+
     <section id="aplicacoesPraticas" class="text-descricao">
         <h1 class="titulo">Aplicações Práticas</h1>
         <p class="descricao">
-            A computação quântica possui diversas aplicações práticas que impactam diferentes setores. Algumas dessas aplicações incluem:
+            A computação quântica possui diversas aplicações práticas que impactam diferentes setores. Algumas dessas
+            aplicações incluem:
         </p>
 
         <div class="img-destaque">
@@ -156,7 +183,10 @@
     <section id="matematica" class="text-descricao">
         <h1 class="titulo">Entendendo a Matemática por Trás da Computação Quântica</h1>
         <p class="descricao">
-            A computação quântica é um campo interdisciplinar que envolve matemática computacional, física quântica e ciência da computação. Ela se baseia em princípios da mecânica quântica para processar e armazenar informações de maneira revolucionária. Alguns aspectos matemáticos fundamentais por trás da computação quântica incluem:
+            A computação quântica é um campo interdisciplinar que envolve matemática computacional, física quântica e
+            ciência da computação. Ela se baseia em princípios da mecânica quântica para processar e armazenar
+            informações de maneira revolucionária. Alguns aspectos matemáticos fundamentais por trás da computação
+            quântica incluem:
         </p>
 
         <div class="img-destaque">

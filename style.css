@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 60px;
+}
+
+.main-header {
+  background: var(--color-nav);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  position: fixed;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 252px;
+  top: 50px;
+  height: calc(100vh - 50px);
+  background: var(--color-azul-escuro-principal);
+  transform: translateX(-100%);
+  transition: .4s ease;
+}
+
+.navigation li {
+  list-style: none;
+  width: 100%;
+  border-bottom: 1px solid rgba(145, 107, 141, 0.5);
+}
+
+.navigation a {
+  color: var(--color-azul-claro);
+  display: block;
+  line-height: 3.5;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: .4s ease;
+  /* font: 1rem 'Agbalumo'; */
+
+  /* font: 1.2rem 'Oswald'; */
+  font: 400 1rem 'Dosis';
+}
+
+.navigation a:hover {
+  transform: translateX(5%);
+}
+
+#btn-nav {
+  display: none;
+}
+
+#btn-nav:checked~nav {
+  transform: translateX(0);
+}
+
+.btn-nav {
+  color: var(--color-azul-claro);
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  padding: 6.5px 15px;
+  transition: .2s ease;
+  background: rgba(0, 0, 0, .1);
+}
+
+.btn-nav:hover {
+  background: rgba(0, 0, 0, .3);
+}
+
+
+.espacamento-linha {
+  margin: 20px 0px 20px 0px;
+}
+
+.linha {
+  margin: 0 auto;
+  color: #F5F5F5;
+  width: 80%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.img-destaque {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.imgHome {
+  width: 60%;
+  margin: 7rem 0 0;
+  border-radius: 20px;
+  /* height: 100px; */
+}
+
+.imgQuantica {
+  margin: 4rem 0 !important;
+}
+
+.subtitulo {
+  margin-top: 50px;
+  font-weight: 200;
+  font-family: 'Kdam Thmor Pro';
+  color: var(--color-azul-bebe)
+}
+
+.text-descricao {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.text-descricao .titulo {
+  margin-top: 30px;
+  font: 600 1.5rem 'Kdam Thmor Pro';
+  color: var(--color-roxo)
+}
+
+.text-descricao .descricao {
+  text-align: justify;
+  padding-top: 20px;
+  font: 1.3rem 'Dosis';
+  color: var(--color-azul-escuro-principal)
+}
+
+/* vantagens-desvantagens */
+
+#vantagens-desvantagens {
+  display: flex;
+}
+
+#vantagens-desvantagens .texto-vd{
+  margin: 0 auto;
+  display: flex;
+}
+
+#vantagens-desvantagens .texto-vd .espaco-vd {
+  border: 8px solid var(--color-roxo);
+  border-style: dotted;
+  width: 250px;
+  height: 220px;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 13px;
+}
+
+#vantagens-desvantagens .texto-vd .espaco-vd p {
+  text-align: center;
+  margin-top: 10px;
+  font: 400 1rem 'Dosis';
+}
+
+@media (min-width: 100px) and (max-width: 400px) {
+  #vantagens-desvantagens .texto-vd .espaco-vd {
+    width: 250px;
+    margin-left: 10px;
+  }
+
+  #vantagens-desvantagens {
+    margin: 0 auto;
+    display: block;
+  }
+
+  #vantagens-desvantagens .texto-vd {
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .imgHome {
+    width: 90%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 1070px) {
+  #vantagens-desvantagens .texto-vd .espaco-vd {
+    width: 260px;
+    margin-left: 10px;
+  }
+
+  #vantagens-desvantagens {
+    display: flex;
+  }
+
+  #vantagens-desvantagens .texto-vd {
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .imgHome {
+    width: 90%;
+  }
+}
+
+/* @media screen and (max-width: 1070px) {
+
+} */
