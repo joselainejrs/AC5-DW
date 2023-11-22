@@ -85,6 +85,13 @@ nav {
   width: 80%;
 }
 
+.linha2 {
+  margin: 0 auto;
+  color: var(--color-roxo);
+  width: 40%;
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -112,6 +119,13 @@ nav {
   margin-top: 50px;
   font-weight: 200;
   font-family: 'Kdam Thmor Pro';
+  color: var(--color-azul-bebe)
+}
+
+.subtitulo2 {
+  margin-top: 50px;
+  font-weight: 200;
+  font: 1.5rem 'Kdam Thmor Pro';
   color: var(--color-azul-bebe)
 }
 
@@ -147,8 +161,6 @@ nav {
 #vantagens-desvantagens .texto-vd .espaco-vd {
   border: 8px solid var(--color-roxo);
   border-style: dotted;
-  width: 250px;
-  height: 220px;
   border-radius: 20px;
   margin: 20px;
   padding: 13px;
@@ -160,7 +172,15 @@ nav {
   font: 400 1rem 'Dosis';
 }
 
-/* como Ingressar */
+/* como Ingressar  e oportunidades-desenvolvimento*/
+.oportunidades-desenvolvimento {
+  margin: 40px 0;
+}
+
+.oportunidades-desenvolvimento .subtitulo {
+  margin-bottom: 20px;
+}
+
 .comoIngressar {
   margin-bottom: 20px;
 }
@@ -197,38 +217,57 @@ table tr td ul li span {
 
 /* Aplicações Práticas */
 
-/* Desafios e Oportunidades */
+/* Desafios Oportunidades, Estudos de casos e matematica*/
+#estudos {
+  margin-bottom: 45px;
+}
+
 .titulo-desafio {
   margin-bottom: 30px;
 }
 
-.desafio {
+.conteudo-desafio .subtitulo {
+  margin-bottom: 40px;
+}
+
+.desafio,
+.estudos-casos,
+.matematica {
   margin: 0 auto;
   width: 80%;
 }
 
-.desafio ol {
+.desafio ol,
+.estudos-casos ol,
+.matematica ol {
   list-style: none;
 }
 
-.desafio ol li {
+.desafio ol li,
+.estudos-casos ol li,
+.matematica ol li {
   margin-right: 30px;
 }
 
-.desafio ol li .text-desafio {
+.desafio ol li .text-desafio,
+.estudos-casos ol li .text-desafio,
+.matematica ol li .text-desafio {
   margin: -27px 0 0 17px;
   font-weight: bold;
   font: 14px 'Kdam Thmor Pro';
   color: var(--color-azul-escuro-principal)
 }
 
-.desafio ol li .descricao-desafio {
+.desafio ol li .descricao-desafio,
+.estudos-casos ol li .descricao-desafio,
+.matematica ol li .descricao-desafio {
   margin: 10px 17px 35px;
   font: 1rem 'Dosis';
   color: var(--color-azul-escuro-principal)
 }
 
-.desafio ol li::before {
+.desafio ol li::before,
+.estudos-casos ol li::before {
   background-color: var(--color-azul-bebe);
   color: var(--color-claro);
   display: inline-block;
@@ -242,44 +281,107 @@ table tr td ul li span {
   width: 18px;
 }
 
-.desafio ol .um::before {
+.matematica .matematica-includes {
+  display: flex;
+}
+
+.matematica ol li::before {
+  background-color: var(--color-azul-bebe);
+  color: var(--color-claro);
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.9em;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 1px solid var(--color-azul-bebe);
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.desafio ol .um::before,
+.estudos-casos ol .um::before,
+.matematica ol .um::before {
   content: "\2081";
 }
 
-.desafio ol .dois::before {
+.desafio ol .dois::before,
+.estudos-casos ol .dois::before,
+.matematica ol .dois::before {
   content: "\2082";
 }
 
-.desafio ol .tres::before {
+.desafio ol .tres::before,
+.estudos-casos ol .tres::before,
+.matematica ol .tres::before {
   content: "\2083";
 }
 
 /* quantica-potencial , Finanças e medicina*/
-.financas .conteudo, .quantica-potencial .conteudo, .medicina .conteudo{
-  display: flex;
+.financas .subtitulo2,
+.medicina .subtitulo2 {
+  margin-bottom: 30px;
 }
 
-.financas .text, .quantica-potencial .text, .medicina .text  {
+.financas .conteudo,
+.quantica-potencial .conteudo,
+.medicina .conteudo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.recursos .conteudo {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+
+.financas .text,
+.quantica-potencial .text,
+.medicina .text,
+.recursos .text {
   margin: 0 auto;
 }
 
-.quantica-potencial .text span, .financas .text span, .medicina .text span {
+.quantica-potencial .text span,
+.financas .text span,
+.medicina .text span,
+.recursos .text span {
   font-weight: bold;
   font: 14px 'Kdam Thmor Pro';
   color: var(--color-azul-escuro-principal)
 }
 
-.quantica-potencial .text p, .financas .text p, .medicina .text p {
+.quantica-potencial .text p,
+.financas .text p,
+.medicina .text p,
+.recursos .text p {
   font: 1rem 'Dosis';
   padding: 10px;
   color: var(--color-azul-escuro-principal)
 }
 
+.financas .text p {
+  width: 29rem;
+}
+
+.recursos .text p {
+  width: 20rem;
+}
+
 /* Criptografia */
+.criptografia {
+  margin-bottom: 45px;
+}
+
+.criptografia .conteudo {
+  display: flex;
+}
+
 .criptografia .text {
   background-color: var(--color-roxo);
   border-radius: 20px;
-  margin-top: 20px;
+  margin: 10px;
   text-align: center;
 }
 
@@ -291,11 +393,15 @@ table tr td ul li span {
 
 .criptografia .text p {
   font: 1rem 'Dosis';
-  padding: 10px;
+  padding: 13px;
   color: var(--color-azul-claro)
 }
 
 /* Logística */
+.logistica {
+  margin-bottom: 45px;
+}
+
 .logistica .text {
   margin-top: 20px;
   display: flex;
@@ -323,17 +429,52 @@ table tr td ul li span {
   color: var(--color-azul-claro)
 }
 
- .logistica .sem-roxo p {
+.logistica .sem-roxo p {
   font: 1.2rem 'Dosis';
   padding: 10px;
   color: var(--color-azul-escuro-principal)
+}
 
-} 
+.borda {
+  font-size: 90px;
+  color: var(--color-roxo);
+  margin-top: -28px;
+  text-align: center;
+}
+
+.img-menores {
+  border-radius: 20px;
+}
+
+.img-menores-financas {
+  border-radius: 20px;
+  width: 70%;
+}
+
+.bibliografia .conteudo {
+  margin: 20px;
+}
+
+.bibliografia .conteudo a {
+  text-decoration: none;
+  font-weight: bold;
+  font: 1rem 'Kdam Thmor Pro';
+  padding: 10px;
+  color: var(--color-roxo)
+}
+
+.bibliografia .conteudo a span {
+  color: var(--color-azul-escuro-principal)
+}
+
+.bibliografia .conteudo {
+  margin-top: 20px;
+
+}
 
 
 @media (min-width: 100px) and (max-width: 400px) {
   #vantagens-desvantagens .texto-vd .espaco-vd {
-    width: 250px;
     margin-left: 10px;
   }
 
@@ -350,11 +491,30 @@ table tr td ul li span {
   .imgHome {
     width: 90%;
   }
+
+
+  .recursos .conteudo,
+  .medicina .conteudo,
+  .financas .conteudo,
+  .quantica-potencial .conteudo,
+  .criptografia .conteudo {
+    display: block;
+  }
+
+  .recursos .text p {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .medicina .text p,
+  .financas .text p {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 1070px) {
   #vantagens-desvantagens .texto-vd .espaco-vd {
-    width: 260px;
     margin-left: 10px;
   }
 
@@ -369,6 +529,25 @@ table tr td ul li span {
 
   .imgHome {
     width: 90%;
+  }
+
+  .recursos .conteudo,
+  .medicina .conteudo,
+  .financas .conteudo,
+  .quantica-potencial .conteudo,
+  .criptografia .conteudo {
+    display: block;
+  }
+
+  .recursos .text p {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .medicina .text p,
+  .financas .text p {
+    margin-bottom: 20px;
+    width: 100%;
   }
 }
 
