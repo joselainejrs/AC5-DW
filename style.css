@@ -105,6 +105,7 @@ nav {
 
 .imgQuantica {
   margin: 4rem 0 !important;
+  width: 90% !important;
 }
 
 .subtitulo {
@@ -138,7 +139,7 @@ nav {
   display: flex;
 }
 
-#vantagens-desvantagens .texto-vd{
+#vantagens-desvantagens .texto-vd {
   margin: 0 auto;
   display: flex;
 }
@@ -158,6 +159,177 @@ nav {
   margin-top: 10px;
   font: 400 1rem 'Dosis';
 }
+
+/* como Ingressar */
+.comoIngressar {
+  margin-bottom: 20px;
+}
+
+table {
+  border: 1px var(--color-azul-bebe);
+  width: 90%;
+  margin: 0 auto;
+}
+
+table tr td {
+  padding: 27px;
+}
+
+table tr td p {
+  font-weight: 200;
+  margin-bottom: 11px;
+  font-family: 'Kdam Thmor Pro';
+  color: var(--color-azul-bebe)
+}
+
+table tr td ul li {
+  margin-bottom: 11px;
+  font: 1rem 'Dosis';
+  color: var(--color-azul-escuro-principal)
+}
+
+table tr td ul li span {
+  margin-bottom: 11px;
+  font-weight: bold;
+  font: 14px 'Kdam Thmor Pro';
+  color: var(--color-azul-escuro-principal)
+}
+
+/* Aplicações Práticas */
+
+/* Desafios e Oportunidades */
+.titulo-desafio {
+  margin-bottom: 30px;
+}
+
+.desafio {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.desafio ol {
+  list-style: none;
+}
+
+.desafio ol li {
+  margin-right: 30px;
+}
+
+.desafio ol li .text-desafio {
+  margin: -27px 0 0 17px;
+  font-weight: bold;
+  font: 14px 'Kdam Thmor Pro';
+  color: var(--color-azul-escuro-principal)
+}
+
+.desafio ol li .descricao-desafio {
+  margin: 10px 17px 35px;
+  font: 1rem 'Dosis';
+  color: var(--color-azul-escuro-principal)
+}
+
+.desafio ol li::before {
+  background-color: var(--color-azul-bebe);
+  color: var(--color-claro);
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.9em;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 1px solid var(--color-azul-bebe);
+  border-radius: 6px;
+  padding: 4px;
+  width: 18px;
+}
+
+.desafio ol .um::before {
+  content: "\2081";
+}
+
+.desafio ol .dois::before {
+  content: "\2082";
+}
+
+.desafio ol .tres::before {
+  content: "\2083";
+}
+
+/* quantica-potencial , Finanças e medicina*/
+.financas .conteudo, .quantica-potencial .conteudo, .medicina .conteudo{
+  display: flex;
+}
+
+.financas .text, .quantica-potencial .text, .medicina .text  {
+  margin: 0 auto;
+}
+
+.quantica-potencial .text span, .financas .text span, .medicina .text span {
+  font-weight: bold;
+  font: 14px 'Kdam Thmor Pro';
+  color: var(--color-azul-escuro-principal)
+}
+
+.quantica-potencial .text p, .financas .text p, .medicina .text p {
+  font: 1rem 'Dosis';
+  padding: 10px;
+  color: var(--color-azul-escuro-principal)
+}
+
+/* Criptografia */
+.criptografia .text {
+  background-color: var(--color-roxo);
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.criptografia .text span {
+  font-weight: bold;
+  font: 18px 'Kdam Thmor Pro';
+  color: var(--color-azul-claro)
+}
+
+.criptografia .text p {
+  font: 1rem 'Dosis';
+  padding: 10px;
+  color: var(--color-azul-claro)
+}
+
+/* Logística */
+.logistica .text {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logistica .cor-roxa {
+  background-color: var(--color-roxo);
+  border-radius: 20px;
+  margin-top: 20px;
+  height: 20%;
+}
+
+.logistica .text span {
+  margin: 15px;
+  font-weight: bold;
+  font: 18px 'Kdam Thmor Pro';
+  color: var(--color-azul-escuro-principal)
+}
+
+.logistica .text p {
+  font: 1.2rem 'Dosis';
+  padding: 10px;
+  color: var(--color-azul-claro)
+}
+
+ .logistica .sem-roxo p {
+  font: 1.2rem 'Dosis';
+  padding: 10px;
+  color: var(--color-azul-escuro-principal)
+
+} 
+
 
 @media (min-width: 100px) and (max-width: 400px) {
   #vantagens-desvantagens .texto-vd .espaco-vd {
@@ -199,6 +371,7 @@ nav {
     width: 90%;
   }
 }
+
 
 /* @media screen and (max-width: 1070px) {
 
