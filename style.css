@@ -110,9 +110,12 @@ nav {
   /* height: 100px; */
 }
 
-.imgQuantica {
+.imgQuantica,
+.imgenergia,
+.img-profissionais {
   margin: 4rem 0 !important;
   width: 90% !important;
+  border-radius: 20px;
 }
 
 .subtitulo {
@@ -247,6 +250,11 @@ table tr td ul li span {
 .estudos-casos ol li,
 .matematica ol li {
   margin-right: 30px;
+  margin-top: 30px;
+}
+
+.matematica ol li {
+  margin-top: 11px !important;
 }
 
 .desafio ol li .text-desafio,
@@ -338,12 +346,25 @@ table tr td ul li span {
 
 .financas .text,
 .quantica-potencial .text,
+.energia .text,
+#sobreComputacao .text,
+.profissionais .text,
 .medicina .text,
 .recursos .text {
   margin: 0 auto;
 }
 
+.energia .text,
+#sobreComputacao .text,
+.profissionais .text {
+  margin-top: 10px;
+  text-align: center;
+}
+
 .quantica-potencial .text span,
+.energia .text span,
+#sobreComputacao .text span,
+.profissionais .text span,
 .financas .text span,
 .medicina .text span,
 .recursos .text span {
@@ -353,6 +374,9 @@ table tr td ul li span {
 }
 
 .quantica-potencial .text p,
+.energia .text p,
+#sobreComputacao .text p,
+.profissionais .text p,
 .financas .text p,
 .medicina .text p,
 .recursos .text p {
@@ -426,6 +450,7 @@ table tr td ul li span {
 .logistica .text p {
   font: 1.2rem 'Dosis';
   padding: 10px;
+  text-align: right;
   color: var(--color-azul-claro)
 }
 
@@ -459,7 +484,6 @@ table tr td ul li span {
   text-decoration: none;
   font-weight: bold;
   font: 1rem 'Kdam Thmor Pro';
-  padding: 10px;
   color: var(--color-roxo)
 }
 
@@ -472,10 +496,13 @@ table tr td ul li span {
 
 }
 
-
 @media (min-width: 100px) and (max-width: 400px) {
+  #vantagens-desvantagens .texto-vd {
+    margin: 0 auto;
+  }
+
   #vantagens-desvantagens .texto-vd .espaco-vd {
-    margin-left: 10px;
+    margin-top: 35px;
   }
 
   #vantagens-desvantagens {
@@ -492,11 +519,18 @@ table tr td ul li span {
     width: 90%;
   }
 
+  .imgQuantica,
+  .imgenergia,
+  .img-profissionais {
+    display: none;
+  }
 
   .recursos .conteudo,
   .medicina .conteudo,
   .financas .conteudo,
   .quantica-potencial .conteudo,
+  .energia .conteudo,
+  #sobreComputacao .conteudo,
   .criptografia .conteudo {
     display: block;
   }
@@ -514,12 +548,17 @@ table tr td ul li span {
 }
 
 @media (min-width: 401px) and (max-width: 1070px) {
+  #vantagens-desvantagens .texto-vd {
+    margin: 0 auto;
+  }
+
   #vantagens-desvantagens .texto-vd .espaco-vd {
-    margin-left: 10px;
+    margin-top: 35px;
   }
 
   #vantagens-desvantagens {
-    display: flex;
+    margin: 0 auto;
+    display: block;
   }
 
   #vantagens-desvantagens .texto-vd {
@@ -531,10 +570,19 @@ table tr td ul li span {
     width: 90%;
   }
 
+  .img-destaque .imgQuantica,
+  .imgenergia,
+  .img-profissionais {
+    display: none;
+  }
+
   .recursos .conteudo,
   .medicina .conteudo,
   .financas .conteudo,
   .quantica-potencial .conteudo,
+  .energia .conteudo,
+  #sobreComputacao .conteudo,
+  .profissionais.conteudo,
   .criptografia .conteudo {
     display: block;
   }
