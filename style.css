@@ -132,6 +132,7 @@ nav {
   color: var(--color-azul-bebe)
 }
 
+
 .text-descricao {
   margin: 0 auto;
   width: 80%;
@@ -344,6 +345,13 @@ table tr td ul li span {
   margin-bottom: 45px;
 }
 
+.text-energia,
+.text-Quantica,
+.text-profissionais {
+  display: none;
+}
+
+
 .financas .text,
 .quantica-potencial .text,
 .energia .text,
@@ -545,6 +553,12 @@ table tr td ul li span {
     margin-bottom: 20px;
     width: 100%;
   }
+
+  .text-energia,
+  .text-Quantica,
+  .text-profissionais {
+    display: block;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 1070px) {
@@ -597,6 +611,13 @@ table tr td ul li span {
     margin-bottom: 20px;
     width: 100%;
   }
+
+  .text-energia,
+  .text-Quantica,
+  .text-profissionais {
+    display: block;
+  }
+
 }
 
 
