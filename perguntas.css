@@ -2,6 +2,10 @@ img {
     margin-top: 50px;
 }
 
+section{
+    padding-bottom: 50px;
+}
+
 .text-perguntas:target {
     scroll-margin-top: 100px;
 }

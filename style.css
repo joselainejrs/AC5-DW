@@ -189,6 +189,10 @@ nav {
   margin-bottom: 20px;
 }
 
+.topicos-como-ingressar2{
+  display: none;
+}
+
 table {
   border: 1px var(--color-azul-bebe);
   width: 90%;
@@ -559,6 +563,15 @@ table tr td ul li span {
   .text-profissionais {
     display: block;
   }
+
+  .topicos-como-ingressar{
+    display: none;
+  }
+
+  .topicos-como-ingressar2{
+    display: block;
+  }
+  
 }
 
 @media (min-width: 401px) and (max-width: 1070px) {
@@ -615,6 +628,14 @@ table tr td ul li span {
   .text-energia,
   .text-Quantica,
   .text-profissionais {
+    display: block;
+  }
+
+  .topicos-como-ingressar{
+    display: none;
+  }
+
+  .topicos-como-ingressar2{
     display: block;
   }
 
