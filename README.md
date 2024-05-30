@@ -2,10 +2,6 @@
   Computação Quantica
 </p>
 
-<h4 align="center">
-Projeto de faculdade : Criação de um Site sobre Computação Quantica
-</h4>
-
 ### Objetivo
 
 #### Estrutura do Site:
@@ -47,12 +43,13 @@ Projeto de faculdade : Criação de um Site sobre Computação Quantica
 
 ### Momento Mão na massa
 
-Desenvolvido em HTML, CSS e JavaScript;
+Desenvolvido em HTML, CSS e JavaScript e com responsividade para todas as telas.
 
-https://github.com/joselainejrs/AC5-DW/assets/55799037/d0b7ccb0-4f0f-4b7d-956f-4eac9d13e8c4
+
+https://github.com/Student-Dev-SI/AC5-DW/assets/55799037/e9f7825a-20e1-4b34-87ac-a95e5e828ac6
 
 <h4 align="center">
-Projeto desenvolvido na Faculdade po Joselaine.
+Projeto desenvolvido por Joselaine.
 </h4>
 
 
